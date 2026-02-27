@@ -1,0 +1,31 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is a practice repo from Namaste React course!",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/divC21/React-basics.git"
+  },
+  "author": "Diva Chauhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/divC21/React-basics/issues"
+  },
+  "homepage": "https://github.com/divC21/React-basics#readme",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "browserlist": [
+    "last 1 Chrome version",
+    "last 1 Safari version",
+    "last 1 Firefox version",
+    "last 1 Edge version"
+  ],
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  }
+}

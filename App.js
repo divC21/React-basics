@@ -1,7 +1,10 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 const heading = React.createElement(
   "h1",
   { id: "heading" },
-  "Hello world from React!"
+  "Hello world from React!",
 );
 /* "heading" is a React element and all React elements are object */
 console.log(heading);
@@ -13,8 +16,12 @@ const parent = React.createElement(
   React.createElement(
     "div",
     { id: "child" },
-    React.createElement("h1", { id: "heading" }, "Hello world from Nested divs")
-  )
+    React.createElement(
+      "h1",
+      { id: "heading" },
+      "Hello world from Nested divs",
+    ),
+  ),
 );
 
 /* To add siblings , 3rd argument can be array of React createElement */
@@ -24,11 +31,11 @@ const siblings = React.createElement(
   React.createElement("div", { id: "child" }, [
     React.createElement(
       "h1",
-      { id: "heading" },
-      "Hello world from Nested divs"
+      { id: "heading", key: "h1" },
+      "Hello world from Nested divs",
     ),
-    React.createElement("h2", { id: "subheading" }, "I am a h2 tag"),
-  ])
+    React.createElement("h2", { id: "subheading", key: "h2" }, "I am a h2 tag"),
+  ]),
 );
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
